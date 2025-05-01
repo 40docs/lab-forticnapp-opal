@@ -1,0 +1,8 @@
+checkTool: opal
+checkType: terraform
+provider: aws
+resourceType: aws_s3_bucket
+category: logging
+severity: medium
+title: "Sample Custom Policy"
+description: "Example policy to check target_bucket logging setting."
