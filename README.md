@@ -105,6 +105,10 @@ The configuration is stored at:
 $HOME/.lacework.toml
 ```
 
+**To configure the Lacework FortiCNAPP CLI for IaC Security:**
+1. Run `lacework component install iac` in the Lacework FortiCNAPP CLI.
+2. The Lacework FortiCNAPP CLI is now configured for IaC. You can now run `lacework iac ....`
+
 ---
 
 ## 🚀 Running the Demo
