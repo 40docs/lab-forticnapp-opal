@@ -5,5 +5,5 @@ resource_type := "aws_s3_bucket"
 default allow = false
 
 allow {
-  input.logging[_].target_bucket == "example"
+  input.logging[i].target_bucket == "example"
 }
