@@ -116,8 +116,8 @@ $HOME/.lacework.toml
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/your-org/lab_forticnapp_opal.git
-cd lab_forticnapp_opal/policies
+git clone https://github.com/your-org/lab-forticnapp-opal.git
+cd lab-forticnapp-opal/policies
 ```
 
 ### 2. Run the Policy Test
