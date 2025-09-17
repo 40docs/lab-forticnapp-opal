@@ -1,0 +1,7 @@
+policy_id: "my-audit-requirement"
+title: "Production Audit Logging Requirement"
+severity: "High"
+description: "All production instances must have audit logging security group"
+resource_type: "aws_instance"
+provider: "aws"
+category: "Compliance"
