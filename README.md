@@ -4,7 +4,7 @@
 
 This repository demonstrates why custom OPAL policies are essential for enterprise security. **Clone and run immediately**, or follow the full learning guide.
 
-## 🚀 Quick Demo (Clone & Run)
+## 🚀 Quick Demo
 
 **Prerequisites**: FortiCNAPP CLI installed and configured (see setup below)
 
@@ -126,35 +126,6 @@ $HOME/.lacework.toml
 **To configure the Lacework FortiCNAPP CLI for IaC Security:**
 1. Run `lacework component install iac` in the Lacework FortiCNAPP CLI.
 2. The Lacework FortiCNAPP CLI is now configured for IaC. You can now run `lacework iac ....`
-
----
-
-## 🧪 Running the Demo
-
-### 1. Clone this repo
-
-```bash
-git clone https://github.com/40docs/lab_forticnapp_opal.git
-cd lab_forticnapp_opal
-```
-
-### 2. Run Standard IaC Scan
-
-```bash
-lacework iac scan -d terraform/
-
-# To see only failures:
-lacework iac scan -d terraform/ 2>&1 | grep "false.*false"
-```
-
-### 3. Run OPAL Custom Policy Scan
-
-```bash
-lacework iac scan -d terraform/ --upload=false --custom-policy-dir=policies
-
-# To see custom policy results:
-lacework iac scan -d terraform/ --upload=false --custom-policy-dir=policies 2>&1 | grep "^c-opl"
-```
 
 ---
 
